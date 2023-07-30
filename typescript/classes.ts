@@ -22,12 +22,14 @@ class Person implements IPerson {
     return this._secret;
   }
 
-  public getSecret() {
+  public getFullName() {
     return this._secret;
   }
 }
 
 const person1 = new Person('Ahmed', 25, '1234');
+
+person1.secret = '5678';
 
 console.log(person1.secret)
 
